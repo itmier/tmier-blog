@@ -1,11 +1,3 @@
-/*
- * @Author: 王云飞
- * @Date: 2022-01-10 15:17:26
- * @LastEditTime: 2022-01-11 10:53:33
- * @LastEditors: 王云飞
- * @Description: 
- * 
- */
 module.exports = {
   title: 'TS文档',
   description: 'TS记录',
