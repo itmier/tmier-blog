@@ -1,7 +1,7 @@
 /*
  * @Author: 王云飞
  * @Date: 2022-01-10 15:17:26
- * @LastEditTime: 2022-01-13 16:29:55
+ * @LastEditTime: 2022-01-13 16:47:48
  * @LastEditors: 王云飞
  * @Description: 
  * 
@@ -73,7 +73,11 @@ module.exports = {
           {
             title: 'Git快捷手册',
             path: '/unprofessional-skills/git'
-          }
+          },
+          {
+            title: 'Test',
+            path: '/unprofessional-skills/test'
+          },
         ]
       },
       {
@@ -85,5 +89,17 @@ module.exports = {
         ]
       }
     ]
-  }
+  },
+  plugins: [
+    [
+      '@vuepress/last-updated',
+      {
+        transformer: (timestamp, lang) => {
+          const moment = require('moment')
+          moment.locale(lang)
+          return moment(timestamp).fromNow()
+        }
+      }
+    ]
+  ]
 }
