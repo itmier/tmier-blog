@@ -1,7 +1,7 @@
 /*
  * @Author: 王云飞
  * @Date: 2022-01-10 15:17:26
- * @LastEditTime: 2022-01-12 10:42:05
+ * @LastEditTime: 2022-01-12 14:27:32
  * @LastEditors: 王云飞
  * @Description: 
  * 
@@ -17,6 +17,7 @@ module.exports = {
   },
   theme: 'reco',
   themeConfig: {
+    lastUpdated: '上次更新',
     subSidebar: 'auto',
     nav: [
       { text: '首页', link: '/'},
@@ -37,7 +38,11 @@ module.exports = {
       },
       {
         title: 'JS基础',
-        collapsable: false
+        collapsable: false,
+        path: '/js-base/array',
+        children: [
+          {title: '数组', path: '/js-base/array'}
+        ]
       },
       {
         title: 'JS高级',
@@ -52,6 +57,17 @@ module.exports = {
       {
         title: 'Vue高级',
         collapsable: false
+      },
+      {
+        title: '旁门左道',
+        collapsable: true,
+        path: '/unprofessional-skills/how-to-use-gitee-picgo',
+        children: [
+          {
+            title: 'Gitee图床',
+            path: '/unprofessional-skills/how-to-use-gitee-picgo'
+          }
+        ]
       },
       {
         title: '工作文档',
