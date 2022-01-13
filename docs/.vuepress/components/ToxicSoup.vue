@@ -1,7 +1,7 @@
 <!--
  * @Author: 王云飞
  * @Date: 2022-01-13 16:02:19
- * @LastEditTime: 2022-01-13 16:24:06
+ * @LastEditTime: 2022-01-13 16:41:10
  * @LastEditors: 王云飞
  * @Description: 
  * 
@@ -28,7 +28,7 @@ export default {
     async getSoupData() {
       const res = await axios.get('https://iiter.cn/api/soup')
       let { data } = res.data
-      this.soupContent = data.title
+      this.soupContent = data.title || '我是一碗毒鸡汤, 干了!'
     }
   }
 }
