@@ -1,11 +1,4 @@
-/*
- * @Author: 王云飞
- * @Date: 2022-01-10 15:17:26
- * @LastEditTime: 2022-01-13 16:47:48
- * @LastEditors: 王云飞
- * @Description: 
- * 
- */
+const moment = require('moment');
 module.exports = {
   title: 'Tmier的博客',
   description: 'Tmier的博客, 记录日常, 享受生活',
@@ -95,6 +88,7 @@ module.exports = {
       '@vuepress/last-updated',
       {
         transformer: (timestamp, lang) => {
+          // 不要忘了安装 moment
           const moment = require('moment')
           moment.locale(lang)
           return moment(timestamp).fromNow()
