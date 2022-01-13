@@ -1,7 +1,7 @@
 /*
  * @Author: 王云飞
  * @Date: 2022-01-10 15:17:26
- * @LastEditTime: 2022-01-12 14:27:32
+ * @LastEditTime: 2022-01-13 13:58:50
  * @LastEditors: 王云飞
  * @Description: 
  * 
@@ -17,8 +17,11 @@ module.exports = {
   },
   theme: 'reco',
   themeConfig: {
+    sidebarDepth: 5,
+    huawei: true,
     lastUpdated: '上次更新',
     subSidebar: 'auto',
+    author: 'Tmier',
     nav: [
       { text: '首页', link: '/'},
       { text: 'TimeLine', link: '/timeline/', icon: 'reco-date' },
@@ -61,11 +64,15 @@ module.exports = {
       {
         title: '旁门左道',
         collapsable: true,
-        path: '/unprofessional-skills/how-to-use-gitee-picgo',
+        path: '/unprofessional-skills/git',
         children: [
           {
             title: 'Gitee图床',
             path: '/unprofessional-skills/how-to-use-gitee-picgo'
+          },
+          {
+            title: 'Git快捷手册',
+            path: '/unprofessional-skills/git'
           }
         ]
       },
