@@ -2,7 +2,7 @@
 author: Tmier
 date: 2022-01-12
 ---
-
+<ToxicSoup />
 # Gitee + PicGo + Typora 配置笔记环境
 
 ## Gitee新建公开仓库

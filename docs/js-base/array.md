@@ -3,7 +3,7 @@ title: 数组基础
 author: Tmier
 date: 2022-01-12
 ---
-
+<ToxicSoup />
 # 数组
 
 ##  声明
