@@ -1,7 +1,15 @@
+/*
+ * @Author: 王云飞
+ * @Date: 2022-01-10 15:17:26
+ * @LastEditTime: 2022-01-14 15:00:10
+ * @LastEditors: 王云飞
+ * @Description: 
+ * 
+ */
 const moment = require('moment');
 module.exports = {
-  title: 'Tmier的博客',
-  description: 'Tmier的博客, 记录日常, 享受生活',
+  title: '飞云的博客',
+  description: '飞云的博客, 记录日常, 享受生活',
   base: '/tmier-blog/',
   locales: {
     '/': {
@@ -14,7 +22,7 @@ module.exports = {
     huawei: true,
     lastUpdated: '上次更新',
     subSidebar: 'auto',
-    author: 'Tmier',
+    author: '飞云',
     nav: [
       { text: '首页', link: '/'},
       { text: 'TimeLine', link: '/timeline/', icon: 'reco-date' },
@@ -28,7 +36,7 @@ module.exports = {
     ],
     sidebar: [
       {
-        title: 'Tmier的博客',
+        title: '飞云的博客',
         path: '/',
         collapsable: false,
       },
@@ -82,5 +90,19 @@ module.exports = {
         ]
       }
     ]
-  }
+  },
+  head: [
+    [
+      'script', {}, `
+      var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?13d8831a22c884494a514f8cf6f85a3f";
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+      })();
+      </script>        
+      `
+    ]
+  ]
 }

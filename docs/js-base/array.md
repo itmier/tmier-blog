@@ -1,6 +1,6 @@
 ---
 title: 数组基础
-author: Tmier
+author: 飞云
 date: 2022-01-12
 ---
 <ToxicSoup />
@@ -184,8 +184,8 @@ usage:
 
 ```js
 let arr = [1,2,9]
-let concatArr = arr.concat(1,['Hello', 'Tmier'], '好家伙')
-console.log(concatArr)// [1, 2, 9, 1, "Hello", "Tmier", "好家伙"]
+let concatArr = arr.concat(1,['Hello', '飞云'], '好家伙')
+console.log(concatArr)// [1, 2, 9, 1, "Hello", "飞云", "好家伙"]
 console.log(arr) // [1, 2, 9]
 // 如果复制对象
 let includeObjArr = arr.concat(0, {a: 'xxx', b: 9})
