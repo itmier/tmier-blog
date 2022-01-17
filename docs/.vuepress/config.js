@@ -1,7 +1,7 @@
 /*
  * @Author: 王云飞
  * @Date: 2022-01-10 15:17:26
- * @LastEditTime: 2022-01-14 15:00:10
+ * @LastEditTime: 2022-01-14 15:57:17
  * @LastEditors: 王云飞
  * @Description: 
  * 
@@ -101,8 +101,15 @@ module.exports = {
         var s = document.getElementsByTagName("script")[0]; 
         s.parentNode.insertBefore(hm, s);
       })();
-      </script>        
       `
     ]
+  ],
+  plugins: [
+    // [
+    //   '@vuepress/google-analytics',
+    //   {
+    //     'ga': '' // UA-00000000-0
+    //   }
+    // ]
   ]
 }

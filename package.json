@@ -12,6 +12,7 @@
     "docs:build": "vuepress build docs"
   },
   "dependencies": {
+    "@vuepress/plugin-google-analytics": "^1.9.5",
     "axios": "^0.24.0",
     "moment": "^2.29.1"
   }
