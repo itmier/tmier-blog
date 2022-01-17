@@ -1,12 +1,13 @@
 /*
  * @Author: 王云飞
  * @Date: 2022-01-10 15:17:26
- * @LastEditTime: 2022-01-14 15:57:17
+ * @LastEditTime: 2022-01-17 13:39:46
  * @LastEditors: 王云飞
  * @Description: 
  * 
  */
 const moment = require('moment');
+const path = require('path')
 module.exports = {
   title: '飞云的博客',
   description: '飞云的博客, 记录日常, 享受生活',
@@ -105,6 +106,7 @@ module.exports = {
     ]
   ],
   plugins: [
+    [path.resolve(__dirname, '../../docs/.vuepress/vuepress-plugin-code-copy/index.js'), {'copybuttonText': '点击复制','copiedButtonText': '复制完成'}]
     // [
     //   '@vuepress/google-analytics',
     //   {
